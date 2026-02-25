@@ -16,7 +16,9 @@
     console.log(orderReports);
     const validTotalRevenue = revenues
         .filter(revenue => revenue > 0)
-        
+        .reduce((sum, revenue) => sum + revenue, 0);
+    console.log("Tổng doanh thu hợp lệ");
+    console.log(validTotalRevenue);
 </script>
 
 <body>
